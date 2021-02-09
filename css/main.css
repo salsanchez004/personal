@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+html,body
+{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body 
+{ 
+	background-color: rgba(0, 0, 0, 1);
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+canvas 
+{ 
+	width:0;
+	height:0;
+}
+
+.titulo
+{
+	position: initial;
+	width: 100%;
+	min-height: 90%;
+	top: 0;
+	
+}
+
+.pop{
+	position:absolute;
+	width: 90%;
+	background-color:rgba(191, 191, 206, 0.774);
+	border-color: rgba(106, 106, 110, 0.466);
+	border-style:none;
+	height: 0;
+	overflow-y: auto;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	margin-top: 2%;
+	margin-bottom: 45%;
+	margin-left: 5%;
+	margin-right: 5%;
+	-webkit-transition: opacity 1s, height 1s cubic-bezier(1,0,1,0); /* Safari */
+  	transition: opacity 1s, height 1s cubic-bezier(1,0,1,0);
+}
+
+.pop #opciones{
+	margin-top: 3%;
+	width: 100%;
+	text-align: center;
+}
+
+.regreso{
+	position: inherit;
+	cursor: pointer;
+    right: 0;
+	top: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+   	background-color: transparent;
+	color: #000000;
+}
+
+.interno{
+	display: flex;
+}
+
+.nombre{
+	width: 40%;
+	color: rgb(27, 26, 63);
+	margin: auto;
+	text-align: center;
+	display: none;
+}
+
+.info{
+	width: 40%;
+	margin: auto;
+	color: rgb(27, 26, 63);
+	text-align: center;
+	display: none;
+}
+
+.objet{
+	width: 40%;
+	margin: auto;
+	color: rgb(27, 26, 63);
+	text-align: center;
+	display: none;
+}
+
+.objet p{
+	font-size: 24px;
+}
+
+.programas{
+	width: 90%;
+	display: flex;
+}
+
+.len{
+width: 40%;
+color: rgb(27, 26, 63);
+margin: auto;
+text-align: center;
+display: block;
+}
+
+.programas .len ul{
+	list-style: none;
+	display: block;
+}
+
+.fw{
+width: 40%;
+color: rgb(27, 26, 63);
+margin: auto;
+text-align: center;
+display: block;
+}
+
+.programas .fw ul{
+	list-style: none;
+	display: block;
+}
+
+.idiomas{
+	width: 40%;
+	margin: auto;
+	color: rgb(27, 26, 63);
+	text-align: center;
+	display: none;
+}
+
+.idiomas ul{
+	list-style: none;
+	display: inline-block;
+}
+
+.experiencia{
+	width: 40%;
+	margin: auto;
+	color: rgb(27, 26, 63);
+	text-align: center;
+	display: none;
+}
+
+.educacion{
+	width: 40%;
+	margin: auto;
+	color: rgb(27, 26, 63);
+	text-align: center;
+	display: none;
+}
+
+.educacion ul{
+	list-style: none;
+}
+
+.certificaciones{
+	width: 40%;
+	margin: auto;
+	color: rgb(27, 26, 63);
+	text-align: center;
+	display: none;
+}
+
+
+.footer
+{
+	width: 100%;
+	background-color: rgba(0, 133, 221, 0.342);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: right; 
+	color: rgb(0, 0, 0);
+	padding-right: 10px;
+}
