@@ -110,7 +110,7 @@
 		</div> 
 		
 		<script src="js/three.js"></script>
-		<script src="js/OrbitControls.js"></script>
+		<script src="js/DeviceOrientationControls.js"></script>
 		<script type="module">
 			let container;
 
@@ -139,8 +139,9 @@
 				scene = new THREE.Scene();
 				scene.background = new THREE.Color( 0xebf5f6 );
 				scene.fog = new THREE.FogExp2( 0x7e7e7e, 0.0157 );
+//////////////////////////////////////
+				controls = new DeviceOrientationControls( camera );
 
-				
 
                 const light = new THREE.DirectionalLight( 0xffffff, 1);
 			    light.position.set( 0, 3, 1 );
@@ -388,7 +389,8 @@
 					//camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
                 
                 	requestAnimationFrame( animate );
-
+			//
+			controls.update();
                 	render();
             	}
 
@@ -398,7 +400,7 @@
 					//
 
 
-					//controls.update();
+					
 					camera.lookAt( scene.position );
 
 					renderer.render( scene, camera );
