@@ -26,7 +26,7 @@
 					<br>
 					<div><h2><i class="fas fa-map-marker-alt" style="font-size:24px"></i> Puebla, Mexico</h2></div>
 					<br>
-					<div><h2><i class="fab fa-linkedin" style="font-size:24px"></i> Linked in</h2></div>
+					<div><a id="linked" href="javascript:void(0)" onclick="ToLinkedIn()"><h2><i class="fab fa-linkedin" style="font-size:24px"></i> Linked in</h2></a></div>
 				</div>
 			<div id="objet" class="objet"><p>Formar un renombre dentro de la industrua de la programacion, ser parte de un gran equipo de desarrollo en tecnologias de informacion y software; aportar mis conocimientos e integra dedicacion a la mision de nuestra empresa y ser un miembro activo de la sociedad para el bien de la economia de la nacion.</p>
 			</div>
@@ -110,7 +110,7 @@
 		</div> 
 		
 		<script src="js/three.js"></script>
-		<script src="js/DeviceOrientationControls.js"></script>
+		<script src="js/OrbitControls.js"></script>
 		<script type="module">
 			let container;
 
@@ -139,8 +139,6 @@
 				scene = new THREE.Scene();
 				scene.background = new THREE.Color( 0xebf5f6 );
 				scene.fog = new THREE.FogExp2( 0x7e7e7e, 0.0157 );
-//////////////////////////////////////
-				//controls = new DeviceOrientationControls( camera );
 
 
                 const light = new THREE.DirectionalLight( 0xffffff, 1);
@@ -262,7 +260,7 @@
                 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 				document.addEventListener( 'click', onDocumentClick, false);
-				//document.addEventListener( 'mouseover', onDocumentMouseenter, false);
+				document.addEventListener( 'touchmove', onDocumentTouch, false);
                 window.addEventListener( 'resize', onWindowResize, false );
 			}
 
@@ -291,6 +289,19 @@
 
 				mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
 				mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+				
+				Scanner();
+			}
+
+			function onDocumentTouch( event ){
+				mouse.x = +(event.targetTouches[0].pageX / window.innerWidth) * 2 +-1;
+
+				mouse.y = -(event.targetTouches[0].pageY / window.innerHeight) * 2 + 1;
+
+				Scanner();
+			}
+
+			function Scanner() {
 
 				raycaster.setFromCamera( mouse, camera );
 
@@ -372,10 +383,10 @@
 					else {
 
 						if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-						INTERSECTED = null;
-						//toolbar.style.height="0";
-						//toolbar.style.borderStyle="none";
-					}
+							INTERSECTED = null;
+							//toolbar.style.height="0";
+							//toolbar.style.borderStyle="none";
+						}
 			}
 
             	function animate(){
@@ -389,18 +400,17 @@
 					//camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
                 
                 	requestAnimationFrame( animate );
-			
-			
+
                 	render();
             	}
 
             	function render(){
                 
-                	///////////////////////
+                	
+					//
+
+
 					//controls.update();
-
-
-					
 					camera.lookAt( scene.position );
 
 					renderer.render( scene, camera );
@@ -415,6 +425,11 @@
 			document.getElementById("pop").style.border = "none";
 	   }
 	   </Script>
+	   <script>
+		   function ToLinkedIn(){
+			location.replace("https://linkedin.com/in/salvador-josue-sánchez-tamayo-843587ba");
+		   }
+	   </script>
 		
 		
 	</body>
