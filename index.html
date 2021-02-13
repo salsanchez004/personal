@@ -32,7 +32,7 @@
 			</div>
 			<div id="programas" class="programas">
 				<div class="len"> 
-				<h2>Lenguajes de programacion y desarrollo web</h2>
+				<h2>Lenguajes de programacion</h2>
 				<ul>
 					<li>java</li>
 					<li>C++</li>
@@ -49,7 +49,7 @@
 				</ul>
 			</div>
 			<div class="fw">
-				<h2>Manejo de herramientas de programacion y desarrollo de aplicaciones</h2>
+				<h2>Herramientas para desarrollo de aplicaciones</h2>
 				<ul>
 					<li>NetBeans</li>
 					<li>Visual Studio</li>
@@ -63,17 +63,15 @@
 					<li>WAMP</li>
 					<li>XAMP</li>
 					<li>Github</li>
-					<li>Filezilla</li>
-					<li>Adobe suit</li>
 				</ul>
-			</div>
 			</div>
 			<div id="idiomas" class="idiomas">
 				<h2>Idiomas</h2>
 				<ul>
-					<li>Español</li>
-					<li>Ingles</li>
+					<li>Español <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></li>
+					<li>Ingles <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></li>
 				</ul>
+			</div>
 			</div>
 			<div id="experiencia" class="experiencia">
 				<h2>Empleado para "Purificadora de agua Samara"</h2><h3>Junio 2007 - Febrero 2010</h3><p>Me desempeñaba en la sanitizacion y llenado de garrafones de agua para su comercializacion.</p>
@@ -114,7 +112,7 @@
 		<script type="module">
 			let container;
 
-			let camera, controls, scene, raycaster, renderer;
+			let camera, controls, scene, raycaster, renderer, tch, mos;
 
 			const arrayo=[];
 
@@ -280,7 +278,8 @@
 
 				mouseX = ( event.clientX - windowHalfX )/100;
 				mouseY = ( event.clientY - windowHalfY )/100;
-
+				mos=1;
+				tch=0;
 			}
 
 			function onDocumentClick( event ) {
@@ -298,7 +297,8 @@
 
 				mouse.y = -(event.targetTouches[0].pageY / window.innerHeight) * 2 + 1;
 
-				Scanner();
+				tch=1;
+				mos=0;
 			}
 
 			function Scanner() {
@@ -395,9 +395,15 @@
                 		arrayo[i].rotation.x += 0.01;
                 		arrayo[i].rotation.y += 0.01;
 					}
+					if(tch==1){
+						camera.position.x += ( mouseX - camera.position.x ) * 0.95;
+					}
+					if(mos==1){
+						camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+					}
 
-					camera.position.x += ( mouseX - camera.position.x ) * 0.05;
-					//camera.position.y += ( - mouseY - camera.position.y ) * 0.15;
+					
+					//camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
                 
                 	requestAnimationFrame( animate );
 
