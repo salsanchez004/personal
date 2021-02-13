@@ -101,7 +101,7 @@ canvas
 }
 
 .objet{
-	width: 40%;
+	width: 80%;
 	margin: auto;
 	color: rgb(27, 26, 63);
 	text-align: center;
@@ -115,14 +115,16 @@ canvas
 .programas{
 	width: 90%;
 	display: flex;
+	margin-left: 10%;
 }
 
 .len{
+	height: 100%;
 width: 40%;
 color: rgb(27, 26, 63);
 margin: auto;
 text-align: center;
-display: block;
+display:inline-block;
 }
 
 .programas .len ul{
@@ -132,10 +134,11 @@ display: block;
 
 .fw{
 width: 40%;
+height: 100%;
 color: rgb(27, 26, 63);
 margin: auto;
 text-align: center;
-display: block;
+display: inline-block;
 }
 
 .programas .fw ul{
@@ -144,11 +147,11 @@ display: block;
 }
 
 .idiomas{
-	width: 40%;
+	width: 80%;
 	margin: auto;
 	color: rgb(27, 26, 63);
 	text-align: center;
-	display: none;
+	display: inline-block;
 }
 
 .idiomas ul{
@@ -157,18 +160,18 @@ display: block;
 }
 
 .experiencia{
-	width: 40%;
+	width: 80%;
 	margin: auto;
 	color: rgb(27, 26, 63);
-	text-align: center;
+	text-align: justify;
 	display: none;
 }
 
 .educacion{
-	width: 40%;
+	width: 80%;
 	margin: auto;
 	color: rgb(27, 26, 63);
-	text-align: center;
+	text-align: justify;
 	display: none;
 }
 
@@ -177,7 +180,7 @@ display: block;
 }
 
 .certificaciones{
-	width: 40%;
+	width: 48%;
 	margin: auto;
 	color: rgb(27, 26, 63);
 	text-align: center;
