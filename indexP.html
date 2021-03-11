@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv=�Content-Type� content=�text/html; charset=UTF-8? />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Arte, Pintura, Escultura, Mural, Galeria, Interactiva, Dinamica, Cultura, BUAP, Paroxismo">
+		<meta name="description" content="Galerias interactivas">
+		<meta name="author" content="Salvador Josue Sanchez Tamayo">
+		<link rel="icon" href="images/logo.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="//db.onlinewebfonts.com/c/f1cfb0d208038e21ad90267089ab2584?family=Felix+Titling" rel="stylesheet" type="text/css"/>
+		<title>Paroxismo</title>
+<!--<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<!--<script src="js/parallax.min.js"></script>-->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/circulo.js"></script>
+		<script src="js/music.js"></script>
+		<script src="js/n1red.js"></script>
+		<script src="js/n2red.js"></script>
+		<script src="js/n3red.js"></script>
+		<script src="js/descripcion.js"></script>
+		<script src="js/contactnav.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+		<script src="https://kit.fontawesome.com/a020d62b27.js" crossorigin="anonymous"></script>
+	</head>
+
+<body>
+	<span id="consultoria" class="consultoria" href="javascript:void(0)" onclick="ToConsultoria()"><img src="images/Imagenicono.png" alt="Tamayo consultoria"></span>
+		<span id="paroxismo" class="paroxismo" href="javascript:void(0)" onclick="ToParoxismo()"><img src="images/salvador.jpg" alt="Paroxismo expo"></span>
+	<!-- MUSICA-->
+	<audio id="music" autoplay loop>
+		<source src="music/Erik.ogg" type="audio/ogg">
+		<source src="music/Erik.mp3" type="audio/mp3">
+		<source src="music/Erik.wav" type="audio/wav">
+  		Your browser does not support the audio tag.
+	</audio>
+	<!-- MUSICA FIN-->
+	<div id="mensajeDescripcion" class="mensaje">
+		<span id="cierreDescripcion" class="regreso" onclick="closeDes()"><i class="fas fa-arrow-alt-circle-left" style="font-size:60px"></i></span>
+			<div class="mensajeContenido">
+				<div class="mensajeParrafo">
+					<h1>&ldquo;PAROXISMO&rdquo;</h1>
+					<div id="frase">En paroxismo se explora, a trav&eacute;s de la creaci&oacute;n visual y audiovisual, el imaginario sexual on&iacute;rico y el placer femenino. Paroxismo se refiere al estado de mayor exaltaci&oacute;n de un sentimiento, en este caso remiti&eacute;ndose al estado de &eacute;xtasis alcanzado en los sue&ntilde;os er&oacute;ticos. En esta muestra de obra art&iacute;stica, te invitamos a hacer el recorrido mientras piensas en aquello que sue&ntilde;as o en lo que fantaseas, tan com&uacute;n como pensar qu&eacute; comer&aacute;s hoy.</div>
+				</div>
+			</div>
+	</div>
+	<!-- PRINCIPAL-->
+
+	<div id="seccionInicial" class="principal">
+		<span class="musica" onclick="toggleSound()"><i id="encendida" class="fas fa-volume-up" style="font-size:16px; display: inline"></i><i id="apagada" class="fas fa-volume-mute" style="font-size:16px; display: none"></i></span>
+		<span class="info" style="font-size:16px; display: inline"><i class="fas fa-info-circle"></i><span class="tooltiptext">Trois Gymnop&eacute;dies: Premi&egrave;re Gymnop&eacute;die - Erik Satie</span></span>
+		<div id="boton1" class="seccion1">
+			<h1></h1><br>
+			<a href="nucleo1.html"><div id="scene" class="scene" data-pointer-events="true" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="25"> <div class="layer" data-depth-x="0.70" data-depth-y="0.80"><span id="nucleo1" class="circulo" draggable="true" ontouchend="redirect()"></span></div></div></a>
+		</div>
+		<div id="tituloInicio"> 
+			<span id="titulo" onclick="openDes()">PAROXISMO</span>
+		</div>
+		<div id="boton3" class="seccion3">
+			<h1></h1><br>
+			<a href="nucleo3.html"><div id="scene1" class="scene" data-pointer-events="true" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="25"><div class="layer" data-depth-x="0.30" data-depth-y="-0.20"><span id="nucleo3" class="circulo" draggable="true" ontouchend="redirect3()"></span></div></div></a>
+		</div>
+		<div id="boton2" class="seccion2">
+			<h1></h1><br>		
+			<a href="nucleo2.html"><div id="scene2" class="scene" data-pointer-events="true" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="25"><div class="layer" data-depth-x="0.60" data-depth-y="1.0"><span id="nucleo2" class="circulo" draggable="true" ontouchend="redirect2()"></span></div></div></a>
+		</div>
+		<span class="comentarios" onclick="openCon()"><i id="globo" class="fas fa-comments" style="font-size:36px"></i></span>
+
+	</div> 
+	<!-- PRINCIPAL FIN-->
+
+	<!-- CONTACTO-->
+	<div id="contacto" class="formulario">
+		<a href="nucleo1.html"><span id="c1"></span></a>
+		<a href="nucleo2.html"><span id="c2"></span></a>
+		<a href="nucleo3.html"><span id="c3"></span></a>
+		<span class="cierreComentario" onclick="closeCon()"><i class="fas fa-arrow-alt-circle-left" style="font-size:50px"></i></span>
+  		<h1 id="title_form">Envianos tus comentarios</h1>
+		<form id="formcontact" name="pop" action="php/correo.php" method="post">
+			<div>
+				<p class="dato">Tu Nombre: </p>
+				<input type="text" name="nombre" id="name" placeholder="nombre completo"></input>
+			</div>		
+			<div>
+				<p class="dato">Edad: </p>
+				<input type="number" name="edad" id="age" placeholder="Edad " min="0" max="120"></input>
+			</div>
+			<div>
+				<p class="dato">Lugar de origen: </p>
+				<input type="text" name="origen" id="origin" placeholder="estado/provincia o pa&iacute;s"></input>
+			</div>
+			<div>
+				<p class="dato">Mensaje: </p>
+				<textarea  class="form-control"  name="mensaje" id="message" placeholder="Escribe tu mensaje porfavor" rows="6" cols="45"></textarea>
+			</div>	
+			<div>
+				<input type="submit" name="enviar" value="Enviar Mensaje"></input>
+			</div>
+		</form>
+		<!-- PIE DE PAGINA INTERNO-->
+		<div class="piein">
+			<div  class="c_con">
+				<h3 style="width: auto">Contacto:</h3>
+				<p style="width: auto">Email: e.proyectocuratorial@gmail.com</p>
+				<a href="https://www.instagram.com/paroxismo_expo/" style="text-decoration: none"><p style="color: #000000; width: auto"><i class="fab fa-instagram" style="font-size:16px; display: inline; color:#FF00FF"></i> Instagram: paroxismo_expo</p></a>
+			</div>
+			<div  class="spoty">
+				<a href="https://open.spotify.com/playlist/5Jk5b0Atb0PHgrG0FwDyCX?si=l97rv_ucSYuC34uZJL1NrA" style="text-decoration: none; width: auto"><p style="color: #000000"><i class="fab fa-spotify" style="font-size:18px; display: inline; color:#1DB954"></i> Paroxismo te invita a escuchar esta playlist en Spotify, a&ntilde;adir las piezas que relaciones con el tema de nuestra exposici&oacute;n virtual y escuchar las que otros agreguen. &iexcl;No olvides agregarnos a tu biblioteca!</p></a>
+			</div>
+		</div>
+		<!-- PIE DE PAGINA INTERNO FIN-->
+	</div>
+	
+	<!-- CONTACTO FIN-->
+
+	<!-- PIE DE PAGINA-->
+	<div class="copy">
+		<p><i class="fas fa-copyright" style="font-size:8px"></i> 2020 Todos los derechos reservados</p>
+	</div>
+	<!-- PIE DE PAGINA FIN-->
+
+
+	<!-- instancia de animacion -->
+	<script>
+		var scene =  $('#scene').get(0);
+		var parallaxInstance = new Parallax(scene);
+	</script>
+<script>
+		var scene =  $('#scene1').get(0);
+		var parallaxInstance = new Parallax(scene1);
+	</script>
+<script>
+		var scene =  $('#scene2').get(0);
+		var parallaxInstance = new Parallax(scene2);
+	</script>
+
+<script type='text/javascript'>
+$(function(){
+    $(document).bind("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+<script>
+	function ToConsultoria(){
+	 location.replace("indexCA.html");
+	}
+	function ToParoxismo(){
+	 location.replace("index.html");
+	}
+</script>
+</body>
+</html>
