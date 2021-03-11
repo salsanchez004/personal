@@ -1,0 +1,4793 @@
+@charset "utf-8";
+@import url(//db.onlinewebfonts.com/c/f1cfb0d208038e21ad90267089ab2584?family=Felix+Titling);
+/* CSS Document */
+
+@font-face {font-family: "Felix Titling"; src: url("//db.onlinewebfonts.com/t/f1cfb0d208038e21ad90267089ab2584.eot"); src: url("//db.onlinewebfonts.com/t/f1cfb0d208038e21ad90267089ab2584.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f1cfb0d208038e21ad90267089ab2584.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f1cfb0d208038e21ad90267089ab2584.woff") format("woff"), url("//db.onlinewebfonts.com/t/f1cfb0d208038e21ad90267089ab2584.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f1cfb0d208038e21ad90267089ab2584.svg#Felix Titling") format("svg"); }
+
+html,body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	opacity: 0.85;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+    	-moz-user-select: none;
+    	-ms-user-select: none;
+    	user-select: none; 
+}
+.consultoria{
+	top: 0;
+	right: 0;
+	position: fixed;
+	margin-top: 100px;
+	margin-right: 20px;
+	z-index: 4;
+	cursor: pointer;
+}
+.consultoria img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-style: groove;
+}
+.consultoria img:hover{
+	border-color: rgba(0, 221, 29, 0.76);
+}
+
+.paroxismo{
+	top: 0;
+	right: 0;
+	position: fixed;
+	margin-top: 230px;
+	margin-right: 20px;
+	z-index: 4;
+	cursor: pointer;
+}
+.paroxismo img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-style: groove;
+}
+
+.paroxismo img:hover{
+	border-color: rgba(126, 0, 138, 0.774);
+}
+.musica{
+	background-color:transparent;
+	color: #000000;
+	position: fixed;
+	cursor: pointer;
+	border-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+   	padding-right: 10px;
+	padding-left: 10px;
+    	margin-top: 7%;
+    	margin-left: 1%;
+    	left: 0;
+	border-radius: 50px;
+	z-index: 20;
+}
+
+.info{
+	background-color:transparent;
+	color: #000000;
+	position: fixed;
+	cursor: pointer;
+	border-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+   	padding-right: 10px;
+	padding-left: 10px;
+    	margin-top: 14%;
+    	margin-left: 1%;
+    	left: 0;
+	border-radius: 50px;
+	z-index: 20;
+}
+
+.info .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.info .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.info:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Botones */
+* {
+  	box-sizing: border-box;
+}
+
+.circulo{
+  	transition: transform .4s;
+  	margin: 0 auto;
+}
+
+.circulo:hover {
+  	-ms-transform: scale(1.8); /* IE 9 */
+  	-webkit-transform: scale(1.8); /* Safari 3-8 */
+  	transform: scale(1.8); 
+}
+
+.principal{
+	margin: 0;
+	padding: 0;
+}
+
+.mensaje{
+	position: fixed;
+	z-index: 90;
+	left: 0;
+	top: 0;
+	padding-top: 100px;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(30,30,30); 
+  	background-color: rgba(30,30,30,0.9); 
+}
+
+.mensaje .mensajeParrafo{
+	background-color:#F8F2F2;
+	text-align: center;
+ 	display: block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	color: rgb(0,0,0);
+}
+
+.mensaje .mensajeParrafo h1{
+	padding-top: 30px;
+	background-color:#F8F2F2;
+	font-family: Felix Titling;
+}
+
+.mensaje .mensajeParrafo #cita_nucleo{
+	padding: 30px 40px;
+	font-size: 32px;
+	font-family: Aparajita;
+	background-color:#F8F2F2;
+}
+
+.home{
+	position: fixed;
+	cursor: pointer;
+    	left: 0;
+	top: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+   	background-color: transparent;
+	color: #000000;
+	z-index: 2;
+}
+
+.home:hover,
+.home:focus{
+transition: transform .4s;
+	background-color: transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.mensajeParrafo{
+	padding: 0;
+	color: #000000;
+	width: 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 21%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 13%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 5%;
+}
+
+.inicio{
+	display: block;
+	padding: 0;
+	background-color:#F8F2F2;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+.nucleo1{
+	background-color:#B47C83;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+.nucleo2{
+	background-color:#0E6866;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+.nucleo3{
+	background-color:#E8A474;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+/* Rompe */
+.principal .contenedorLista{
+	position: fixed;
+	top: 0;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right:auto;
+  	width: 100%;
+	text-align:center;
+  	height: 1%;
+  	background-color: transparent;
+	/* box-shadow: 0px 0px 20px rgba(149, 153, 159, .16); */
+	z-index: 2;
+}
+.rompecabezas{
+	
+}
+
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:120px;
+	height:500px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:45px;
+	height: 490px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:110px;
+	height:500px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:45px;
+	height:490px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:120px;
+	height:500px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+/* 3D */
+.scene {
+	padding:0 ;
+	position: fixed;
+	top: 0;
+	left:0;
+	margin-top: 130px;
+  	width: 100%;
+  	height: 70%;
+  	background-color: transparent;
+	z-index:1;
+}
+
+.navvideo .scene1 {
+	padding:0 ;
+	top: 0;
+	left:0;
+  	width: 0%;
+  	height: 0%;
+  	background-color: white;
+}
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 12%; 
+margin-top:8%;
+width:15%; 
+height: 15%; 
+}
+.scene .layer #pa:hover {opacity: 0.7;}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 8%; 
+margin-top:10%;
+width: 24%; 
+height: 29%; 
+}
+.navvideo .scene1 .layer1 #pb:hover {opacity: 0.7;}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 36%; 
+margin-top:0%;
+width:30%; 
+height: 30%; 
+}
+.scene .layer #pc:hover {opacity: 0.7;}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%; 
+margin-top:5%;
+width: 20%; 
+height: 65%; 
+}
+.navvideo .scene1 .layer1 #pd:hover {opacity: 0.7;}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 77%;
+margin-top:6%;
+width:15%; 
+height: 15%; 
+}
+.scene .layer #pe:hover {opacity: 0.7;}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 72%;
+margin-top:14%;
+width: 24%; 
+height: 28%;  
+}
+.navvideo .scene1 .layer1 #pf:hover {opacity: 0.7;}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%;
+margin-top:70%;
+width: 40%; 
+height: 40%; 
+}
+.scene .layer #pg:hover {opacity: 0.7;}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 8%; 
+margin-top:3%;
+width:25%; 
+height: 25%; 
+}
+.scene .layer #ph:hover {opacity: 0.7;}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 65%; 
+margin-top:0%;
+width:40%; 
+height: 55%; 
+}
+.scene .layer #pi:hover {opacity: 0.7;}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 1300px;
+margin-top:2%;
+width: 25%; 
+height: 25%; 
+}
+.scene .layer #pj:hover {opacity: 0.7;}
+
+.scene .layer #pk{
+position: fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top:18%;
+width:28%; 
+height: 33%;
+z-index: 20;
+}
+.scene .layer #pk:hover {opacity: 0.7;}
+
+.scene .layer #pl{
+position: fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 67%;
+margin-top: 20%;
+padding: 0;
+width:30%; 
+height: 35%;
+z-index: 20;
+}
+.scene .layer #pl:hover {opacity: 0.7;}
+
+/* 3D FIN */
+
+.sala2{
+	background-color: transparent;
+	color: #000000;
+	position: fixed;
+	cursor: pointer;
+	padding-top: 20px;
+	padding-bottom: 45px;
+   	padding-right: 20px;
+	padding-left: 20px;
+    	margin-bottom: 60px;
+    	margin-right: 15px;
+    	right: 0;
+	bottom: 0;
+	border-radius: 50px;
+	z-index: 19;
+}
+
+/* Sala 2 */
+.navvideo {
+	height: 0;
+  	width: 0;
+  	position: fixed;
+  	z-index: 20;
+  	top: 0;
+  	right: 0;
+  	overflow: auto;
+  	transition: 0.5s;
+  	padding-top: 35px;
+}
+.navvideo .cierresala{
+    	position: absolute;
+	cursor: pointer;
+    	left: 0;
+	top: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+   	background-color: transparent;
+	color: #000000;
+}
+.navvideo .cierresala:hover,
+.navvideo .cierresala:focus{
+transition: transform .4s;
+	background-color: transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.navvideo .videoinfo{
+	display:none;
+	position: absolute;
+    	left: 0;
+	top: 0;
+	margin-top:20%;
+	width:30%;
+	height:40%;
+   	background-color: transparent;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-family: Bahnschrift SemiLight, Helvetica;
+  font-stretch: condensed;
+  font-size: 24px;
+}
+.navvideo .videoinfo h1{
+	width:100%;
+	text-align:center;
+}
+
+.navvideo .videoinfo #comentariovideo{
+	list-style-type: none;
+}
+.video{
+  	z-index: 17;
+  	top: 0;
+  	left: 0;
+	margin-top:8%;
+	margin-left:30%;
+}
+
+.video #primitivo{
+	width: 750px; 
+	height: 750px;
+}
+/* Sala 2 FIN */
+
+/*IMAGENES MODAL */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 50; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 450px;
+}
+
+/* Caption of Modal Image */
+#caption {
+list-style-type: none;
+  position:fixed;
+  top: 0;
+  left: 0;
+  margin-top: 10%;
+  margin-left: 1%;
+  display: grid;
+  width: 30%;
+  max-width: 400px;
+  text-align: left;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #8F8F8F;
+  padding: 10px 50px;
+  font-size: 24px;
+  font-family: Bahnschrift SemiLight, Helvetica;
+  font-stretch: condensed;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* 2nd modal */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 51; /* Sit on top */
+  padding-top: 25px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content (image) */
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Add Animation */
+.modal-content2{  
+  -webkit-animation-name: zoom2;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom2;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom2 {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom2 {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content2 {
+    width: 100%;
+  }
+}
+/*IMAGENES MODAL FIN */
+
+/* Comentarios */
+.formulario {
+	height: 0;
+  	width: 0;
+  	position: fixed;
+  	z-index: 21;
+  	top: 0;
+  	right: 0;
+  	background-color: #F8F2F2;
+  	overflow-x: hidden;
+	overflow-y: hidden;
+  	transition: 0.5s;
+  	padding-top: 35px;
+}
+
+.formulario #title_form{
+	margin-left: 100px;
+}
+
+.formulario #formcontact{
+	margin-left: 100px;
+}
+
+.formulario p .dato{
+  	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+	text-align: left;
+  	font-size: 16px;
+  	color: #000000;
+  	display: inline-block;
+  	transition: 0.3s;
+}
+
+.formulario textarea {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	text-align: left;
+  	font-size: 12px;
+  	color: #000000;
+  	display: block;
+  	transition: 0.3s;
+  	resize: none;
+}
+
+.formulario .cierreComentario{
+    	position: absolute;
+	cursor: pointer;
+    	left: 0;
+	top: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+   	background-color: transparent;
+	color: #000000;
+}
+
+.formulario #c1{
+	cursor:pointer;
+	position: absolute;
+    	right: 0;
+	top: 0;
+	margin-top: 7%;
+    	margin-right: 15%;
+	padding-top: 56px;
+	padding-bottom: 56px;
+   	padding-right: 56px;
+	padding-left: 56px;
+	border-radius: 60px;
+   	background-color:#B47C83;
+}
+
+.formulario #c2{
+	cursor:pointer;
+	position: absolute;
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 5%;
+	padding-top: 56px;
+	padding-bottom: 56px;
+   	padding-right: 56px;
+	padding-left: 56px;
+	border-radius: 60px;
+   	background-color:#0E6866;
+}
+
+.formulario #c3{
+	cursor:pointer;
+	position: absolute;
+    	right: 0;
+	top: 0;
+	margin-top: 12%;
+    	margin-right: 5%;
+	padding-top: 56px;
+	padding-bottom: 56px;
+   	padding-right: 56px;
+	padding-left: 56px;
+	border-radius: 60px;
+   	background-color:#E8A474;
+} 
+
+.formulario .piein{
+	padding-left: 100px;
+	position: fixed;
+	bottom: 0;
+    	width: 100%;
+	height: 20%;
+    	background-color:#E8a474;
+    	color: #000000;
+	text-align: left;
+}
+
+.formulario .piein .c_con{
+	font-size: 24px;
+	display: inline-block;
+	width: 40%;
+}
+
+.formulario .piein .spoty{
+	font-size: 24px;
+	display: inline-block;
+	width: 40%;
+}
+
+.comentarios{
+	background-color: transparent;
+	color: #000000;
+	position: fixed;
+	cursor: pointer;
+	padding-top: 20px;
+	padding-bottom: 45px;
+   	padding-right: 20px;
+	padding-left: 20px;
+    	margin-top: 60px;
+    	margin-right: 15px;
+    	right: 0;
+	bottom: 0;
+	border-radius: 50px;
+	z-index: 21;
+}
+
+/* Comentarios fin*/
+
+/* Pie de pagina */
+.copy{
+	position: fixed;
+	left: 0;
+	bottom:0;
+    	width: 100%;
+    	background-color:transparent;
+    	color: #000000;
+	text-align: left;
+	font-size: 8px;
+}
+/* Pie de pagina fin*/
+
+
+/* ------------------------------------------------------------280x653------------------------------------------------------ */
+
+@media screen and (min-width: 280px) and (max-width: 319px){
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 16px;
+}
+.musica{
+	border-left: 10px;
+    	margin-top: 35%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 50%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 41%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 21%;
+}
+
+#c3{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+.inicio{
+    	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+.nucleo1{
+    	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+.nucleo2{
+	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+.nucleo3{
+    	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+
+/* Rompe */
+.principal .contenedorLista{
+	margin-top: 100px;
+  	width: 100%;
+  	height: 45%;
+}
+.rompecabezas .imagen{
+	padding: 1px;
+	border-radius: 0;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:30px;
+	height:250px;
+	padding-bottom:30px;
+}
+.rompecabezas .imagen #i2{
+	width:15px;
+	height:250px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i3{
+	width:30px;
+	height:250px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i4{
+	width:15px;
+	height:250px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i5{
+	width:30px;
+	height:250px;
+	padding-bottom:10px;
+}
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top:68%;
+width:25%; 
+height: 35%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 1%; 
+margin-top: 400px;
+width: 42%; 
+height: 26%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:20%;
+width:45%; 
+height: 45%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:5%;
+width: 50%; 
+height: 48%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 72%;
+margin-top:68%;
+width:30%; 
+height: 35%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 58%;
+margin-top:410px;
+width: 38%; 
+height: 22%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30px;
+margin-top:300px;
+width:45%; 
+height: 45%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top:56%;
+width:40%; 
+height: 40%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 34%; 
+margin-top:0%;
+width:40%; 
+height: 55%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:56%;
+width:40%; 
+height: 40%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 8%; 
+margin-top:95%;
+width:35%; 
+height: 14%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 64%;
+margin-top: 93%;
+padding: 0;
+width:33%; 
+height: 13%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: 0;
+  width: 100%;
+  max-width: 280px;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 12px;
+}
+
+.navvideo .videoinfo{
+	margin-top:420px;
+	width:100%;
+	height:40%;
+  	padding: 0;
+	font-size: 12px;
+	text-shadow: 1px 1px #8F8F8F;
+  	font-family: Bahnschrift SemiLight, Helvetica;
+}
+.video{
+	margin-top:40%;
+	margin-left:0;
+}
+
+.video #primitivo{
+	width: 280px; 
+	height: 280px;
+}
+
+.formulario {
+  	top: 0;
+  	right: 0;
+  	padding-top: 35px;
+}
+.formulario #title_form{
+	margin-left: 50px;
+}
+
+.formulario #formcontact{
+	margin-left: 0;
+}
+
+.formulario #c1{
+    	right: 0;
+	top: 0;
+	margin-top: 7%;
+    	margin-right: 15%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+}
+
+.formulario #c2{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 5%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+}
+
+.formulario #c3{
+    	right: 0;
+	top: 0;
+	margin-top: 13%;
+    	margin-right: 5%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+} 
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 18%;
+}
+
+.formulario .piein .c_con{
+	display: inline-block;
+	width: 50%;
+	font-size: 8px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 8px;
+}
+}
+
+/* ------------------------------------------------------------320 -- 359------------------------------------------------------ */
+
+@media screen and (max-width: 359px) and (min-width: 320px){
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 20px;
+}
+.musica{
+	border-left: 10px;
+    	margin-top: 35%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 50%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 41%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 21%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+.inicio{
+    	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+.nucleo1{
+    	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+.nucleo2{
+	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+.nucleo3{
+    	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+
+/* Rompe */
+.principal .contenedorLista{
+	margin-top: 70px;
+  	width: 100%;
+  	height: 55%;
+}
+.rompecabezas{
+	
+}
+.rompecabezas .imagen{
+	padding: 1px;
+	border-radius: 0;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:33px;
+	height:250px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i2{
+	width:15px;
+	height:250px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i3{
+	width:33px;
+	height:250px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i4{
+	width:15px;
+	height:250px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i5{
+	width:33px;
+	height:250px;
+	padding-bottom:10px;
+}
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 3%; 
+margin-top:40%;
+width:30%; 
+height: 42%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 1%; 
+margin-top: 100%;
+width: 35%; 
+height: 27%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 34%; 
+margin-top:0%;
+width:42%; 
+height: 35%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:5%;
+width: 43%; 
+height: 53%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%;
+margin-top:40%;
+width:30%; 
+height: 42%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:100%;
+width: 31%; 
+height: 25%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 20px;
+margin-top:230px;
+width:30%; 
+height: 30%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top:36%;
+width:35%; 
+height: 35%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 55%; 
+margin-top:0%;
+width:30%; 
+height: 44%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:45%;
+width:35%; 
+height: 35%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 1%; 
+margin-top: 72%;
+width:43%; 
+height: 24%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 49%;
+margin-top: 68%;
+padding: 0;
+width:38%; 
+height: 23%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: 0;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 12px;
+}
+
+.navvideo .videoinfo{
+	margin-top:270px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 12px;
+}
+.video{
+	width: 100%;
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 200px; 
+	height: 200px;
+}
+
+.formulario {
+  	padding-top: 0px;
+}
+.formulario #title_form{
+	margin-left: 70px;
+	margin-top: 40px;
+}
+
+.formulario #formcontact{
+	margin-left: 4px;
+}
+.formulario #formcontact .dato{
+	display:inline;
+}
+.formulario #c1{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 36%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c2{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 20%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c3{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 4%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 20%;
+}
+
+.formulario .piein .c_con{
+	display: inline-block;
+	width: 50%;
+	font-size: 9px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 9px;
+}
+}
+
+/* ------------------------------------------------------------360 -- 410------------------------------------------------------ */
+
+@media screen and (max-width: 410px) and (min-width: 360px){
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 22px;
+}
+
+.musica{
+	border-left: 10px;
+    	margin-top: 35%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 50%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 41%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 21%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+.inicio{
+    	border-radius:50px;
+    	height: 55px;
+    	width: 55px;
+}
+
+.nucleo1{
+    	border-radius:50px;
+    	height: 55px;
+    	width: 55px;
+}
+
+.nucleo2{
+	border-radius:50px;
+    	height: 55px;
+    	width: 55px;
+}
+
+.nucleo3{
+    	border-radius:50px;
+    	height: 55px;
+    	width: 55px;
+}
+
+
+/* Rompe */
+.principal .contenedorLista{
+	margin-top: 70px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas{
+	
+}
+.rompecabezas .imagen{
+	padding: 1px;
+	border-radius: 0;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:40px;
+	height:250px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i2{
+	width:19px;
+	height:250px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i3{
+	width:40px;
+	height:250px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i4{
+	width:19px;
+	height:250px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i5{
+	width:40px;
+	height:250px;
+	padding-bottom:10px;
+}
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 13%; 
+margin-top:40%;
+width:33%; 
+height: 40%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top: 100%;
+width: 28%; 
+height: 25%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 34%; 
+margin-top:0%;
+width:48%; 
+height: 41%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 26%; 
+margin-top:8%;
+width: 40%; 
+height: 42%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 55%;
+margin-top:39%;
+width:33%; 
+height: 40%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:100%;
+width: 30%; 
+height: 25%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 40px;
+margin-top:270px;
+width:37%; 
+height: 37%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top:36%;
+width:35%; 
+height: 35%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 55%; 
+margin-top:0%;
+width:32%; 
+height: 45%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:45%;
+width:35%; 
+height: 35%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 1%; 
+margin-top: 72%;
+width:43%; 
+height: 24%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 53%;
+margin-top: 66%;
+padding: 0;
+width:38%; 
+height: 23%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: 0;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 12px;
+}
+
+.navvideo .videoinfo{
+	margin-top:420px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 14px;
+}
+.video{
+	width: 100%;
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 340px; 
+	height: 340px;
+}
+
+.formulario {
+  	padding-top: 8px;
+}
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+.formulario #formcontact{
+	margin-left: 4px;
+}
+
+.formulario #c1{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 36%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c2{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 20%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c3{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 4%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 14%;
+}
+
+.formulario .piein .c_con{
+	display: inline-block;
+	width: 50%;
+	font-size: 8px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 8px;
+}
+  
+}
+
+/* ------------------------------------------------------------411 -- 460------------------------------------------------------ */
+
+@media screen and (min-width: 411px) and (max-width: 460px){
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 26px;
+}
+
+.musica{
+	border-left: 10px;
+    	margin-top: 35%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 50%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 41%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 21%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+
+
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 100px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 10%; 
+margin-top:55%;
+width:30%; 
+height: 38%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top: 98%;
+width: 35%; 
+height: 24%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 25%; 
+margin-top:2%;
+width:52%; 
+height: 40%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 32%; 
+margin-top:10%;
+width: 38%; 
+height: 40%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:55%;
+width:30%; 
+height: 38%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:100%;
+width: 35%; 
+height: 24%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%;
+margin-top:100%;
+width:35%; 
+height: 35%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 13%; 
+margin-top:57%;
+width:35%; 
+height: 35%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 33%; 
+margin-top:0%;
+width:40%; 
+height: 55%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:59%;
+width:35%; 
+height: 35%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 11%; 
+margin-top: 69%;
+width:38%; 
+height: 24%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 54%;
+margin-top: 67%;
+width:36%; 
+height: 24%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: auto;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 20px;
+}
+
+.navvideo .videoinfo{
+	margin-top:470px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 16px;
+}
+.video{
+	width: 100%;
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 380px; 
+	height: 380px;
+}
+
+.formulario {
+  	padding-top: 8px;
+}
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 55px;
+}
+
+.formulario #formcontact{
+	margin-left: 30px;
+}
+
+.formulario #c1{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 5%;
+    	margin-right: 9%;
+}
+
+.formulario #c2{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 1%;
+}
+
+.formulario #c3{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 10%;
+    	margin-right: 1%;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 22%;
+}
+
+.formulario .piein .c_con{
+	display: inline-block;
+	width: 50%;
+	font-size: 14px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 14px;
+} 
+}
+/* ------------------------------------------------------------461 -- 600------------------------------------------------------ */
+
+@media screen and (min-width: 461px) and (max-width: 600px){
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 30px;
+}
+
+.musica{
+	border-left: 10px;
+    	margin-top: 35%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 50%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 41%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 21%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+
+
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 10%; 
+margin-top:40%;
+width:34%; 
+height: 42%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top: 87%;
+width: 42%; 
+height: 26%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 25%; 
+margin-top:0%;
+width:52%; 
+height: 40%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:10%;
+width: 36%; 
+height: 41%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:40%;
+width:34%; 
+height: 42%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:90%;
+width: 47%; 
+height: 27%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%;
+margin-top:75%;
+width:25%; 
+height: 25%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 13%; 
+margin-top:47%;
+width:25%; 
+height: 25%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 35%; 
+margin-top:0%;
+width:25%; 
+height: 40%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:49%;
+width:25%; 
+height: 25%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 11%; 
+margin-top: 58%;
+width:33%; 
+height: 21%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 54%;
+margin-top: 57%;
+width:33%; 
+height: 21%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: auto;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 20px;
+}
+
+.navvideo .videoinfo{
+	margin-top:490px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 18px;
+}
+.video{
+	width: 100%;
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 380px; 
+	height: 380px;
+}
+
+.formulario {
+  	padding-top: 8px;
+}
+.formulario #title_form{
+	margin-left: 30px;
+	margin-top: 55px;
+}
+
+.formulario #formcontact{
+	margin-left: 30px;
+}
+
+.formulario #c1{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 5%;
+    	margin-right: 9%;
+}
+
+.formulario #c2{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 1%;
+}
+
+.formulario #c3{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 10%;
+    	margin-right: 1%;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 22%;
+}
+
+.formulario .piein .c_con{
+	margin-left: 5px;
+	display: inline-block;
+	width: 50%;
+	font-size: 14px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 14px;
+} 
+}
+/* ------------------------------------------------------------601 -- 767------------------------------------------------------ */
+
+@media screen and (min-width: 601px) and (max-width: 767px){
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 28px;
+}
+
+.musica{
+	border-left: 10px;
+    	margin-top: 35%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 50%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 41%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 21%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+
+
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 10%; 
+margin-top:40%;
+width:34%; 
+height: 42%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top: 82%;
+width: 35%; 
+height: 24%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 25%; 
+margin-top:0%;
+width:52%; 
+height: 40%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:5%;
+width: 28%; 
+height: 35%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:40%;
+width:34%; 
+height: 42%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:80%;
+width: 37%; 
+height: 25%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%;
+margin-top:80%;
+width:29%; 
+height: 29%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 13%; 
+margin-top:47%;
+width:29%; 
+height: 29%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 35%; 
+margin-top:0%;
+width:30%; 
+height: 44%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:49%;
+width:29%; 
+height: 29%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 11%; 
+margin-top: 48%;
+width:33%; 
+height: 21%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 54%;
+margin-top: 47%;
+width:33%; 
+height: 21%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: auto;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 20px;
+}
+
+.navvideo .videoinfo{
+	margin-top:660px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 18px;
+}
+.video{
+	width: 100%;
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 500px; 
+	height: 500px;
+}
+
+.formulario {
+  	padding-top: 8px;
+}
+.formulario #title_form{
+	margin-left: 80px;
+	margin-top: 55px;
+}
+
+.formulario #formcontact{
+	margin-left: 80px;
+}
+
+.formulario #c1{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 5%;
+    	margin-right: 9%;
+}
+
+.formulario #c2{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 1%;
+}
+
+.formulario #c3{
+	padding: 18px;
+	border-radius: 40px;
+	margin-top: 10%;
+    	margin-right: 1%;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 22%;
+}
+
+.formulario .piein .c_con{
+	margin-left: 40px;
+	display: inline-block;
+	width: 50%;
+	font-size: 14px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 14px;
+} 
+}
+
+/* ------------------------------------------------------------768 -- 850------------------------------------------------------ */
+
+@media screen and (min-width: 768px) and (max-width: 850px){
+
+.musica{
+	border-left: 10px;
+    	margin-top: 15%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 25%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 31%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 16%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+
+
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 10%; 
+margin-top:48%;
+width:26%; 
+height: 30%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 1%; 
+margin-top: 69%;
+width: 39%; 
+height: 27%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 32%; 
+margin-top:2%;
+width:40%; 
+height: 26%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:6%;
+width: 32%; 
+height: 37%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 56%;
+margin-top:48%;
+width:26%; 
+height: 30%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-top:69%;
+margin-left: 51%;
+width: 36%; 
+height: 25%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%;
+margin-top:77%;
+width:30%; 
+height: 30%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 12%; 
+margin-top:47%;
+width:30%; 
+height: 30%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 35%; 
+margin-top:0%;
+width:35%; 
+height: 48%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:47%;
+width:30%; 
+height: 30%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top: 40%;
+width:30%; 
+height: 24%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 54%;
+margin-top: 37%;
+width:30%; 
+height: 24%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: auto;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 20px;
+}
+
+.navvideo .videoinfo{
+	margin-top:600px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 16px;
+}
+.video{
+	width: 100%;
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 450px; 
+	height: 450px;
+}
+
+.formulario {
+  	padding-top: 100px;
+}
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 1px;
+}
+
+.formulario #formcontact{
+	margin-left: 100px;
+	margin-top: 0px;
+}
+
+.formulario #c1{
+	padding: 30px;
+	border-radius: 40px;
+	margin-top: 7%;
+    	margin-right: 16%;
+}
+
+.formulario #c2{
+	padding: 30px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 5%;
+}
+
+.formulario #c3{
+	padding: 30px;
+	border-radius: 40px;
+	margin-top: 13%;
+    	margin-right: 5%;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 25%;
+}
+
+.formulario .piein .c_con{
+	margin-left: 15px;
+	padding-left: 0px;
+	font-size: 18px;
+}
+
+.formulario .piein .spoty{
+	font-size: 18px;
+}
+}
+
+/* ------------------------------------------------------------851 -- 1023------------------------------------------------------ */
+
+@media screen and (min-width: 851px) and (max-width: 1023px){
+
+.musica{
+	border-left: 10px;
+    	margin-top: 15%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 25%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 31%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 16%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 22%; 
+margin-top:40%;
+width:26%; 
+height: 30%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 1%; 
+margin-top: 62%;
+width: 40%; 
+height: 30%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 32%; 
+margin-top:2%;
+width:40%; 
+height: 26%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:10%;
+width: 39%; 
+height: 45%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 56%;
+margin-top:40%;
+width:26%; 
+height: 30%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-top:62%;
+margin-left: 57%;
+width: 42%; 
+height: 28%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 53%;
+margin-top:84%;
+width:30%; 
+height: 30%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 20%; 
+margin-top:42%;
+width:28%; 
+height: 28%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%; 
+margin-top:0%;
+width:29%; 
+height: 39%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 77%;
+margin-top:47%;
+width:28%; 
+height: 28%; 
+}
+
+.scene .layer #pk{
+margin-left: 2%; 
+margin-top:25%;
+width:34%; 
+height: 28%; 
+}
+
+.scene .layer #pl{
+margin-left: 63%;
+margin-top: 27%;
+width:35%; 
+height: 28%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption{
+  position:relative;
+  margin: auto;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 20px;
+}
+
+.navvideo .videoinfo{
+	margin-top:750px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 16px;
+}
+.video{
+	width: 100%;
+	margin-top:10%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 550px; 
+	height: 550px;
+}
+
+.formulario {
+  	padding-top: 100px;
+}
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 1px;
+}
+
+.formulario #formcontact{
+	margin-left: 100px;
+	margin-top: 0px;
+}
+
+.formulario #c1{
+	padding: 30px;
+	border-radius: 40px;
+	margin-top: 7%;
+    	margin-right: 16%;
+}
+
+.formulario #c2{
+	padding: 30px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 5%;
+}
+
+.formulario #c3{
+	padding: 30px;
+	border-radius: 40px;
+	margin-top: 13%;
+    	margin-right: 5%;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 25%;
+}
+
+.formulario .piein .c_con{
+	margin-left: 15px;
+	padding-left: 0px;
+	font-size: 18px;
+}
+
+.formulario .piein .spoty{
+	font-size: 18px;
+}
+}
+
+/* ------------------------------------------------------------1024 -- 1200 ------------------------------------------------------ */
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 40%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+.navvideo .scene1 .layer1 #pb{
+margin-left: 1%; 
+margin-top: 32%;
+width: 28%; 
+height: 23%; 
+}
+
+
+.navvideo .scene1 .layer1 #pd{
+margin-left:35%; 
+margin-top: 4%;
+width: 26%; 
+height: 39%; 
+}
+
+
+.navvideo .scene1 .layer1 #pf{
+margin-left: 63%; 
+margin-top: 32%;
+width: 28%; 
+height: 23%; 
+}
+
+
+.scene .layer #pg{
+margin-left: 13%;
+margin-top:40%;
+width:22%; 
+height: 22%; 
+}
+
+.scene .layer #ph{
+margin-left: 7%; 
+margin-top:1%;
+width:24%; 
+height: 24%; 
+}
+
+.scene .layer #pi{
+margin-left: 40%; 
+margin-top:0%;
+width:30%; 
+height: 42%; 
+}
+
+.scene .layer #pj{
+margin-left: 760px;
+margin-top:4%;
+width:26%; 
+height: 26%; 
+}
+
+.scene .layer #pk{
+margin-left: 7%; 
+margin-top:30%;
+width:26%; 
+height: 23%; 
+}
+
+.scene .layer #pl{
+margin-left: 63%;
+margin-top: 30%;
+width:27%; 
+height: 23%;
+}
+
+.video{
+	margin-top:10%;
+}
+
+.video #primitivo{
+	width: 440px; 
+	height: 440px;
+}
+
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.formulario #c1{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 5%;
+    	margin-right: 19%;
+}
+
+.formulario #c2{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 11%;
+}
+
+.formulario #c3{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 10%;
+    	margin-right: 11%;
+} 
+.formulario .piein .c_con{
+	font-size: 16px;
+}
+
+.formulario .piein .spoty{
+	font-size: 16px;
+}
+}
+
+/* ------------------------------------------------------------1201 -- 1360 ------------------------------------------------------ */
+
+@media screen and (min-width: 1201px) and (max-width: 1360px){
+
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:290px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:300px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+.navvideo .scene1 .layer1 #pb{
+margin-left: 1%; 
+margin-top: 32%;
+width: 28%; 
+height: 26%; 
+}
+
+
+.navvideo .scene1 .layer1 #pd{
+margin-left:32%; 
+margin-top: 4%;
+width: 26%; 
+height: 49%; 
+}
+
+
+.navvideo .scene1 .layer1 #pf{
+margin-left: 63%; 
+margin-top: 32%;
+width: 28%; 
+height: 24%; 
+}
+
+
+.scene .layer #pg{
+margin-left: 13%;
+margin-top:50%;
+width:22%; 
+height: 22%; 
+}
+
+.scene .layer #ph{
+margin-left: 7%; 
+margin-top:1%;
+width:24%; 
+height: 24%; 
+}
+
+.scene .layer #pi{
+margin-left: 40%; 
+margin-top:0%;
+width:30%; 
+height: 42%; 
+}
+
+.scene .layer #pj{
+margin-left: 910px;
+margin-top:4%;
+width:26%; 
+height: 26%; 
+}
+
+.scene .layer #pk{
+margin-left: 8%; 
+margin-top:15%;
+width:24%; 
+height: 27%; 
+}
+
+.scene .layer #pl{
+margin-left: 63%;
+margin-top: 17%;
+width:23%; 
+height: 29%;
+}
+
+.video{
+	margin-top:11%;
+}
+
+.video #primitivo{
+	width: 440px; 
+	height: 440px;
+}
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 0px;
+}
+.formulario #c1{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 5%;
+    	margin-right: 19%;
+}
+
+.formulario #c2{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 11%;
+}
+
+.formulario #c3{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 10%;
+    	margin-right: 11%;
+} 
+.formulario .piein .c_con{
+	font-size: 16px;
+}
+
+.formulario .piein .spoty{
+	font-size: 16px;
+}
+}
+
+/* ------------------------------------------------------------1361 -- 1860 ------------------------------------------------------ */
+
+@media screen and (min-width: 1361px) and (max-width: 1860px){
+
+.scene .layer #pg{
+margin-left: 10%;
+margin-top:50%;
+width:22%; 
+height: 22%; 
+}
+
+.scene .layer #ph{
+margin-left: 6%; 
+margin-top:1%;
+width:20%; 
+height: 20%; 
+}
+
+.scene .layer #pi{
+margin-left: 40%; 
+margin-top:0%;
+width:44%; 
+height: 42%; 
+}
+
+.scene .layer #pj{
+margin-left: 1100px;
+margin-top:4%;
+width:21%; 
+height: 21%; 
+}
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:70px;
+	height:400px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:48px;
+	height: 390px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:70px;
+	height:400px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:48px;
+	height:390px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:70px;
+	height:400px;
+	padding-bottom:40px;
+}
+
+.video{
+	margin-top:6%;
+}
+
+.video #primitivo{
+	width: 500px; 
+	height: 500px;
+}
+
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 0px;
+}
+.formulario #c1{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 5%;
+    	margin-right: 19%;
+}
+
+.formulario #c2{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 11%;
+}
+
+.formulario #c3{
+	padding: 32px;
+	border-radius: 40px;
+	margin-top: 10%;
+    	margin-right: 11%;
+} 
+.formulario .piein .c_con{
+	font-size: 16px;
+}
+
+.formulario .piein .spoty{
+	font-size: 16px;
+}
+
+}
+
+/* ------------------------------------------------------------1861 -- 1919 ------------------------------------------------------ */
+
+@media screen and (min-width: 1861px) and (max-width: 1919px){
+
+.scene .layer #pg{
+margin-left: 15%;
+margin-top:50%;
+width:22%; 
+height: 22%; 
+}
+
+.scene .layer #ph{
+margin-left: 10%; 
+margin-top:1%;
+width:16%; 
+height: 16%; 
+}
+
+.scene .layer #pi{
+margin-left: 55%; 
+margin-top:0%;
+width:33%; 
+height: 35%; 
+}
+
+.scene .layer #pj{
+margin-left: 1500px;
+margin-top:10%;
+width:17%; 
+height: 17%; 
+}
+}
+
+/* ------------------------------------------------------------800 x 600------------------------------------------------------ */
+
+@media screen and (width: 800px) and (min-height: 500px) and (max-height: 600px){
+
+.musica{
+	border-left: 10px;
+    	margin-top: 10%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 17%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 31%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 16%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 1%;
+}
+
+
+
+.principal .contenedorLista{
+	top: 0;
+	left:0;
+	margin-top: 90px;
+  	width: 100%;
+  	height: 50%;
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:50px;
+	height:250px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i2{
+	width:28px;
+	height: 240px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i3{
+	width:50px;
+	height:250px;
+	padding-bottom:40px;
+}
+.rompecabezas .imagen #i4{
+	width:28px;
+	height:240px;
+	padding-top:40px;
+}
+.rompecabezas .imagen #i5{
+	width:50px;
+	height:250px;
+	padding-bottom:40px;
+}
+
+/* Rompe FIN */
+
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 20%; 
+margin-top:22%;
+width:18%; 
+height: 23%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top: 42%;
+width: 31%; 
+height: 28%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 36%; 
+margin-top:0%;
+width:28%; 
+height: 23%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 37%; 
+margin-top:6%;
+width: 25%; 
+height: 47%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 57%;
+margin-top:22%;
+width:18%; 
+height: 23%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 52%;
+margin-top:40%;
+width: 35%; 
+height: 28%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%;
+margin-top:32%;
+width:22%; 
+height: 22%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 5%; 
+margin-top:20%;
+width:20%; 
+height: 20%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%; 
+margin-top:0%;
+width:22%; 
+height: 37%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 70%;
+margin-top:18%;
+width:20%; 
+height: 20%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top: 32%;
+width:16%; 
+height: 14%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 70%;
+margin-top:32%;
+width:16%; 
+height: 14%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: auto;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 20px;
+}
+
+.navvideo .videoinfo{
+	margin-top:405px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 16px;
+}
+.video{
+	width: 100%;
+	margin-top:7%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 330px; 
+	height: 330px;
+}
+
+.formulario {
+  	padding-top: 8px;
+}
+.formulario #formcontact .dato{
+	display:inline;
+}
+.formulario #title_form{
+	margin-left: 100px;
+	margin-top: 40px;
+}
+
+.formulario #formcontact{
+	margin-left: 100px;
+}
+
+.formulario #c1{
+	padding: 24px;
+	border-radius: 40px;
+	margin-top: 5%;
+    	margin-right: 9%;
+}
+
+.formulario #c2{
+	padding: 24px;
+	border-radius: 40px;
+	margin-top: 1%;
+    	margin-right: 1%;
+}
+
+.formulario #c3{
+	padding: 24px;
+	border-radius: 40px;
+	margin-top: 10%;
+    	margin-right: 1%;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 22%;
+}
+
+.formulario .piein .c_con{
+	padding-bottom: 20px;
+	margin-left: 30px;
+	display: inline-block;
+	width: 55%;
+	font-size: 14px;
+}
+
+.formulario .piein .spoty{
+	padding-bottom: 20px;
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 14px;
+}
+}
+
+/* ------------------------------------------------------------280h -- 319h------------------------------------------------------ */
+
+@media screen and (min-height: 280px) and (max-height: 319px){
+.mensaje{
+	padding-top: 20px;
+}
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 22px;
+}
+.musica{
+	border-left: 10px;
+    	margin-top: 15%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 23%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 26%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 15%;
+}
+
+#c3{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 4%;
+}
+
+.inicio{
+    	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+.nucleo1{
+    	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+.nucleo2{
+	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+.nucleo3{
+    	border-radius:50px;
+    	height: 33px;
+    	width: 33px;
+}
+
+/* Rompe */
+.principal .contenedorLista{
+	margin-top: 20px;
+  	width: 100%;
+  	height: 35%;
+}
+.rompecabezas{
+	
+}
+.rompecabezas .imagen{
+	padding: 1px;
+	border-radius: 0;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:23px;
+	height:150px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i2{
+	width:15px;
+	height:150px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i3{
+	width:23px;
+	height:150px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i4{
+	width:15px;
+	height:150px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i5{
+	width:23px;
+	height:150px;
+	padding-bottom:10px;
+}
+
+/* Rompe FIN */
+
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 18%; 
+margin-top:2%;
+width:12%; 
+height: 15%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 4%; 
+margin-top: 15%;
+width: 20%; 
+height: 22%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%; 
+margin-top:0%;
+width:15%; 
+height: 8%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%; 
+margin-top:2%;
+width: 20%; 
+height: 70%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 68%;
+margin-top:2%;
+width:12%; 
+height: 15%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 68%;
+margin-top:15%;
+width: 22%; 
+height: 23%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 25%;
+margin-top:10%;
+width:12%; 
+height: 12%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 6%; 
+margin-top:0%;
+width:12%; 
+height: 12%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%; 
+margin-top:0%;
+width:20%; 
+height: 23%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 80%;
+margin-top:0%;
+width:12%; 
+height: 12%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 18%; 
+margin-top:11%;
+width:15%; 
+height: 20%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 68%;
+margin-top: 11%;
+padding: 0;
+width:17%; 
+height: 22%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: 0;
+  width: 100%;
+  max-width: 280px;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 12px;
+}
+
+.navvideo .videoinfo{
+	margin-top:300px;
+	width:100%;
+	height:40%;
+  	padding: 0;
+	font-size: 12px;
+	text-shadow: 1px 1px #8F8F8F;
+  	font-family: Bahnschrift SemiLight, Helvetica;
+}
+.video{
+	margin-top:0%;
+	margin-left:0%;
+}
+
+.video #primitivo{
+	width: 280px; 
+	height: 280px;
+}
+
+.formulario{
+	padding: 0px;
+}
+.formulario #title_form{
+	margin-left: 90px;
+	margin-top: 0px;
+}
+
+.formulario #formcontact{
+	margin-left: 90px;
+}
+.formulario #formcontact .dato{
+	display:inline;
+}
+
+.formulario #formcontact .form-control{
+	width: 50%;
+	height: 1%;
+}
+
+.formulario #c1{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 20%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c2{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 12%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c3{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 4%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 0%;
+}
+
+.formulario .piein .c_con{
+	display: inline-block;
+	width: 50%;
+	font-size: 6px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 6px;
+}
+  
+}
+
+/* ------------------------------------------------------------320h -- 599h------------------------------------------------------ */
+
+@media screen and (min-height: 320px) and (max-height: 450px){
+.mensaje .mensajeParrafo #cita_nucleo{
+	font-size: 20px;
+}
+.musica{
+	border-left: 10px;
+    	margin-top: 15%;
+    	margin-left: 1%;
+}
+
+.info{
+	border-left: 10px;
+    	margin-top: 22%;
+    	margin-left: 1%;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 28%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 16%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 4%;
+}
+
+.inicio{
+    	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+.nucleo1{
+    	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+.nucleo2{
+	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+.nucleo3{
+    	border-radius:50px;
+    	height: 44px;
+    	width: 44px;
+}
+
+
+/* Rompe */
+.principal .contenedorLista{
+	margin-top: 60px;
+  	width: 100%;
+  	height: 35%;
+}
+.rompecabezas{
+	
+}
+.rompecabezas .imagen{
+	padding: 1px;
+	border-radius: 0;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen #i1{
+	width:23px;
+	height:150px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i2{
+	width:15px;
+	height:150px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i3{
+	width:23px;
+	height:150px;
+	padding-bottom:10px;
+}
+.rompecabezas .imagen #i4{
+	width:15px;
+	height:150px;
+	padding-top:10px;
+}
+.rompecabezas .imagen #i5{
+	width:23px;
+	height:150px;
+	padding-bottom:10px;
+}
+
+/* Rompe FIN */
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 13%; 
+margin-top:13%;
+width:10%; 
+height: 22%; 
+}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 9%; 
+margin-top: 25%;
+width: 25%; 
+height: 27%; 
+}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 30%; 
+margin-top:0%;
+width:22%; 
+height: 15%; 
+}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 39%; 
+margin-top:5%;
+width: 28%; 
+height: 49%; 
+}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 60%;
+margin-top:13%;
+width:10%; 
+height: 22%; 
+}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 69%;
+margin-top:25%;
+width: 23%; 
+height: 25%;  
+}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 10%;
+margin-top:20%;
+width:12%; 
+height: 12%; 
+}
+
+.scene .layer #ph{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 16%; 
+margin-top:0%;
+width:12%; 
+height: 12%; 
+}
+
+.scene .layer #pi{
+cursor: pointer;
+pointer-events: all;
+margin-left: 43%; 
+margin-top:0%;
+width:17%; 
+height: 25%; 
+}
+
+.scene .layer #pj{
+cursor: pointer;
+pointer-events: all;
+margin-left: 67%;
+margin-top:15%;
+width:15%; 
+height: 15%; 
+}
+
+.scene .layer #pk{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 12%; 
+margin-top: 16%;
+width:20%; 
+height: 21%; 
+}
+
+.scene .layer #pl{
+cursor: pointer;
+pointer-events: all;
+margin-left: 59%;
+margin-top: 16%;
+padding: 0;
+width:20%; 
+height: 21%;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:relative;
+  margin: 0;
+  width: 100%;
+  text-shadow: 1px 1px #8F8F8F;
+  font-size: 12px;
+}
+
+.navvideo .videoinfo{
+	margin-top:350px;
+	width:100%;
+	height:40%;
+  	padding: 0 20px;
+	font-size: 12px;
+}
+.video{
+	width: 100%;
+	margin-top:5%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+.video #primitivo{
+	width: 250px; 
+	height: 250px;
+}
+
+.formulario{
+	padding: 0px;
+}
+.formulario #title_form{
+	margin-left: 90px;
+	margin-top: 0px;
+}
+
+.formulario #formcontact{
+	margin-left: 90px;
+}
+.formulario #formcontact .dato{
+	display:inline;
+}
+
+.formulario #formcontact .form-control{
+	width: 50%;
+	height: 1%;
+}
+
+.formulario #c1{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 20%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c2{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 12%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+}
+
+.formulario #c3{
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 4%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 40px;
+} 
+
+
+.formulario .piein{
+	padding: 0;
+	bottom: 0;
+    	width: 100%;
+	height: 18%;
+}
+
+.formulario .piein .c_con{
+	display: inline-block;
+	width: 50%;
+	font-size: 8px;
+}
+
+.formulario .piein .spoty{
+	padding-left: 0px;
+	display: inline-block;
+	width: 40%;
+	font-size: 8px;
+}
+  
+}

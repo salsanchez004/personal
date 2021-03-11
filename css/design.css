@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	opacity: 0.75;
+	margin: 0;
+	padding: 0;
+	background-color:#000000;
+	overflow-x: hidden;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../image/loadingDog.gif") 50% 50% no-repeat rgb(249,249,249);
+/*    opacity: .8;*/
+}
+
+/* Encabezado*/
+.header{
+  	position: static;
+  	width: 100%;
+	height: 50px;
+  	color: #FFFFFF;
+  	text-align: center;
+	padding: 0;
+}
+/* Encabezado final*/
+
+/* navegador lateral */
+
+.menubutton{
+    background-color: #5D4037;
+    color: #FFFFFF;
+    position: fixed;
+    font-size: 50px;
+    cursor: pointer;
+    border-left: 10px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 30px;
+    right: 0;
+    padding-left: 17px;
+	border-radius: 50px;
+	z-index: 1;
+}
+
+.sidenav {
+/*  	height: 100%;*/
+	height: 0;
+  	width: 0;
+  	position: fixed;
+  	z-index: 2;
+  	top: 0;
+  	right: 0;
+  	background-color: #5D4037;
+  	overflow-x: hidden;
+	overflow-y: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+}
+
+.sidenav a {
+  	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+	text-align: center;
+  	font-size: 30px;
+  	color: #818181;
+  	display: block;
+  	transition: 0.3s;
+}
+
+.sidenav a:hover {
+ 	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 43px;
+    right: 0px;
+    font-size: 50px;
+    margin-right: 20px;
+	padding-right: 25px;
+	border-radius: 50px;
+    background-color: #000000;
+}
+
+#main {
+  	/*transition: margin-left .5s;
+  	padding: 16px;*/
+}
+
+@media screen and (max-height: 450px) {
+  	.sidenav {padding-top: 15px;}
+  	.sidenav a {font-size: 18px;}
+}
+/* navegador lateral fin */
+
+
+/*Contenidos*/
+
+.scroll, .scroll1, .scroll2, .scroll3{
+/*	position: relative;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.scroll{
+	background-image: url("../image/pass.jpg");
+	min-height: 80%; 
+}
+  
+
+.scroll1{
+	background-image: url("../image/simone-jo-moore-oSme1locXAQ-unsplash.jpg");
+	min-height: 80%; 
+}
+
+.scroll2{
+	background-image: url("../image/kevingrieveback.jpg");
+	min-height: 20%; 
+}
+
+.scroll3{
+	background-image: url("../image/corridorback.jpg");
+	min-height: 50%; 
+}
+
+
+	
+	
+	.aboutdiv{
+		width: 100%;
+		background-image: url("../image/flwrs.jpg");
+		color: white;
+		font-size:36px;
+	}
+.aboutdiv h1{
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.aboutdiv p{
+	text-align: justify;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+	.misiondiv{
+		width: 100%;
+		color: white;
+		background-image: url("../image/europeana.jpg");
+		font-size:36px;
+		}
+.misiondiv h1{
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.misiondiv p{
+	text-align: justify;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	.visiondiv{
+		width: 100%;
+		color: white;
+		background-image: url("../image/paint.jpg");
+		font-size:36px;
+	}
+.visiondiv h1{
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.visiondiv p{
+	text-align: justify;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	.contactdiv{
+		width: 100%;
+		color: white;
+		background-image: url("../image/numers.jpg");
+		font-size:36px;
+	}
+.contactdiv h1{
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contactdiv p{
+	text-align: justify;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contactdiv input{
+    text-align: center;
+    width: 20%;
+	margin-left: 30%;
+}
+/*Contenidos fin*/
+
+
+
+/* Pie de pagina*/
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: #5D4037;
+    color: #FFFFFF;
+    font-size: 30px;
+	text-align: left;
+	}
+.mapa{
+    
+}
+.mapaTitle{
+	margin-left: 15%;
+}
+ul.mapaSitio{
+	
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+}
+.mapaSitio li a{
+	margin-left: 15%;
+	text-decoration: none;
+	color: white;
+}
+
+
+.copy{
+	position: fixed;
+	left: 0;
+	bottom:0;
+    width: 100%;
+    background-color: #5D4037;
+    color: #FFFFFF;
+	text-align: right;
+}
+
+/* Pie de pagina fin*/

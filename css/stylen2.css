@@ -1,0 +1,601 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+img{white-space:pre}
+
+body {
+	opacity: 0.85;
+	margin: 0;
+	padding: 0;
+	/* overflow-x: hidden; */
+}
+
+.musica{
+	background-color:transparent;
+	color: #000000;
+	position: fixed;
+	cursor: pointer;
+	border-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+   	padding-right: 10px;
+	padding-left: 10px;
+    	margin-top: 7%;
+    	margin-left: 1%;
+    	left: 0;
+	border-radius: 50px;
+	z-index: 50;
+}
+
+/* Botones */
+* {
+  	box-sizing: border-box;
+}
+
+.circulo{
+  	transition: transform .4s;
+  	margin: 0 auto;
+}
+
+.circulo:hover {
+  	-ms-transform: scale(1.8); /* IE 9 */
+  	-webkit-transform: scale(1.8); /* Safari 3-8 */
+  	transform: scale(1.8); 
+}
+
+.principal{
+	margin:0;
+	padding: 0;
+	width: 100%;
+}
+
+.mensaje{
+	position: fixed;
+	z-index: 90;
+	left: 0;
+	top: 0;
+	padding-top: 100px;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0); 
+  	background-color: rgba(0,0,0,0.9); 
+}
+
+.mensaje .mensajeParrafo{
+	text-align: center;
+ 	display: block;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.mensaje .mensajeParrafo p{
+background-color:#F8F2F2;
+}
+
+.home{
+	position: fixed;
+	cursor: pointer;
+    	left: 0;
+	top: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+   	background-color: transparent;
+	color: #000000;
+	z-index: 2;
+}
+
+.home:hover,
+.home:focus{
+	background-color: transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.mensajeParrafo{
+	padding: 0;
+	color: #000000;
+	width: 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#c1{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 22%;
+}
+
+#c2{
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 13%;
+}
+
+#c3{
+	
+	position: fixed;
+	right: 0;
+	top: 0;
+    	margin-top: 2%;
+    	margin-right: 5%;
+}
+
+.inicio{
+	display: block;
+	padding: 0;
+	background-color:#F8F2F2;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+.nucleo1{
+	background-color:#B47C83;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+.nucleo2{
+	background-color:#0E6866;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+.nucleo3{
+	background-color:#E8A474;
+	display: block;
+	padding: 0;
+	cursor: pointer;
+    	white-space: nowrap;
+    	border-radius:50px;
+    	height: 66px;
+    	width: 66px;
+	z-index: 21;
+}
+
+/* Rompe */
+.contenedorLista{
+	padding:0 ;
+	position: fixed;
+	top: 0;
+	left:0;
+	margin-top: 100px;
+	margin-left: 20%;
+  	width: 54%;
+  	height: 90%;
+	max-height:520px;
+  	background-color: transparent;
+	box-shadow: 0px 0px 20px rgba(149, 153, 159, .16);
+}
+.rompecabezas{
+	
+}
+.rompecabezas .imagen{
+	display:inline;
+	grid-template-columns: auto 1fr 1fr 1fr;
+	padding: 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.rompecabezas .imagen img{
+	width:222px;
+	height:500px;
+}
+
+/* Rompe FIN */
+
+/* 3D */
+.scene {
+	padding:0 ;
+	position: fixed;
+	top: 0;
+	left:0;
+	margin-top: 130px;
+  	width: 100%;
+  	height: 70%;
+  	background-color: transparent;
+	z-index:1;
+}
+
+. navvideo .scene1 {
+	padding:0 ;
+	position: fixed;
+	top: 0;
+	left:0;
+  	width: 100%;
+  	height: 50%;
+  	background-color: white;
+}
+
+.scene .layer #pa{
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 12%; 
+margin-top:8%;
+width:15%; 
+height: 15%; 
+}
+.scene .layer #pa:hover {opacity: 0.7;}
+
+.navvideo .scene1 .layer1 #pb{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+transition: 0.3s;
+margin-left: 8%; 
+margin-top:10%;
+width: 20%; 
+height: 24%; 
+}
+.navvideo .scene1 .layer1 #pb:hover {opacity: 0.7;}
+
+.scene .layer #pc{
+cursor: pointer;
+pointer-events: all;
+margin-left: 36%; 
+margin-top:0%;
+width:30%; 
+height: 30%; 
+}
+.scene .layer #pc:hover {opacity: 0.7;}
+
+.navvideo .scene1 .layer1 #pd{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 40%; 
+margin-top:5%;
+width: 20%; 
+height: 65%; 
+}
+.navvideo .scene1 .layer1 #pd:hover {opacity: 0.7;}
+
+.scene .layer #pe{
+cursor: pointer;
+pointer-events: all;
+margin-left: 77%;
+margin-top:6%;
+width:15%; 
+height: 15%; 
+}
+.scene .layer #pe:hover {opacity: 0.7;}
+
+.navvideo .scene1 .layer1 #pf{
+position:fixed;
+cursor: pointer;
+pointer-events: all;
+margin-left: 72%;
+margin-top:14%;
+width: 20%; 
+height: 24%;  
+}
+.navvideo .scene1 .layer1 #pf:hover {opacity: 0.7;}
+
+.scene .layer #pg{
+cursor: pointer;
+pointer-events: all;
+margin-left: 200px;
+margin-top:350px;
+width:60%; 
+height: 60%; 
+}
+.scene .layer #pg:hover {opacity: 0.7;}
+
+/* 3D FIN */
+
+.sala2{
+	background-color: transparent;
+	color: #000000;
+	position: fixed;
+	cursor: pointer;
+	padding-top: 20px;
+	padding-bottom: 45px;
+   	padding-right: 20px;
+	padding-left: 20px;
+    	margin-bottom: 60px;
+    	margin-right: 15px;
+    	right: 0;
+	bottom: 0;
+	border-radius: 50px;
+	z-index: 19;
+}
+
+/* Sala 2 */
+.navvideo {
+	height: 0;
+  	width: 0;
+  	position: fixed;
+  	z-index: 20;
+  	top: 0;
+  	right: 0;
+  	overflow-x: hidden;
+	overflow-y: hidden;
+  	transition: 0.5s;
+  	padding-top: 35px;
+}
+.navvideo .cierresala{
+    	position: absolute;
+	cursor: pointer;
+    	left: 0;
+	top: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+   	background-color: transparent;
+	color: #000000;
+}
+.navvideo .videoinfo{
+	display:none;
+	position: absolute;
+    	left: 0;
+	top: 0;
+	margin-top:10%;
+	width:30%;
+	height:40%;
+   	background-color: transparent;
+	color: #000000;
+}
+.navvideo .videoinfo h1{
+	width:100%;
+	text-align:center;
+}
+.video{
+  	z-index: 17;
+  	top: 0;
+  	left: 0;
+	margin-top:8%;
+	margin-left:30%;
+}
+/* Sala 2 FIN */
+
+/*IMAGENES MODAL */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 50; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 50%;
+  max-width: 450px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  position:fixed;
+  top: 0;
+  left: 0;
+  margin-top: 10%;
+  display: block;
+  width: 30%;
+  max-width: 400px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*IMAGENES MODAL FIN */
+
+/* Comentarios */
+.formulario {
+	height: 0;
+  	width: 0;
+  	position: fixed;
+  	z-index: 21;
+  	top: 0;
+  	right: 0;
+  	background-color: #F8F2F2;
+  	overflow-x: hidden;
+	overflow-y: hidden;
+  	transition: 0.5s;
+  	padding-top: 35px;
+}
+
+.formulario #formcontact{
+	margin-left: 50px;
+}
+
+.formulario p .dato{
+  	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+	text-align: left;
+  	font-size: 16px;
+  	color: #000000;
+  	display: inline-block;
+  	transition: 0.3s;
+}
+
+.formulario textarea {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	text-align: left;
+  	font-size: 12px;
+  	color: #000000;
+  	display: block;
+  	transition: 0.3s;
+  	resize: none;
+}
+
+.formulario .cierreComentario{
+    	position: absolute;
+	cursor: pointer;
+    	left: 0;
+	top: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+   	padding-right: 16px;
+	padding-left: 16px;
+	border-radius: 50px;
+   	background-color: transparent;
+	color: #000000;
+}
+
+.formulario #c1{
+	position: absolute;
+    	right: 0;
+	top: 0;
+	margin-top: 5%;
+    	margin-right: 15%;
+	padding-top: 56px;
+	padding-bottom: 56px;
+   	padding-right: 56px;
+	padding-left: 56px;
+	border-radius: 60px;
+   	background-color:#B47C83;
+}
+
+.formulario #c2{
+	position: absolute;
+    	right: 0;
+	top: 0;
+	margin-top: 1%;
+    	margin-right: 5%;
+	padding-top: 56px;
+	padding-bottom: 56px;
+   	padding-right: 56px;
+	padding-left: 56px;
+	border-radius: 60px;
+   	background-color:#0E6866;
+}
+
+.formulario #c3{
+	position: absolute;
+    	right: 0;
+	top: 0;
+	margin-top: 11%;
+    	margin-right: 5%;
+	padding-top: 56px;
+	padding-bottom: 56px;
+   	padding-right: 56px;
+	padding-left: 56px;
+	border-radius: 60px;
+   	background-color:#E8A474;
+} 
+
+.formulario .piein{
+	position: fixed;
+	bottom: 0;
+	height: 18%;
+    	width: 100%;
+    	background-color:#E8a474;
+    	color: #000000;
+	text-align: left;
+}
+
+.comentarios{
+	background-color: transparent;
+	color: #000000;
+	position: fixed;
+	cursor: pointer;
+	padding-top: 20px;
+	padding-bottom: 45px;
+   	padding-right: 20px;
+	padding-left: 20px;
+    	margin-top: 60px;
+    	margin-right: 15px;
+    	right: 0;
+	bottom: 0;
+	border-radius: 50px;
+	z-index: 21;
+}
+
+/* Comentarios fin*/
+
+/* Pie de pagina */
+.copy{
+	position: fixed;
+	left: 0;
+	bottom:0;
+    	width: 100%;
+    	background-color:transparent;
+    	color: #000000;
+	text-align: left;
+}
+/* Pie de pagina fin*/

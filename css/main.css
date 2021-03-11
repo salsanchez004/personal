@@ -33,6 +33,45 @@ canvas
 	
 }
 
+.consultoria{
+	top: 0;
+	left: 0;
+	position: fixed;
+	margin-top: 20px;
+	margin-left: 20px;
+	z-index: 4;
+	cursor: pointer;
+}
+.consultoria img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-style: groove;
+}
+.consultoria img:hover{
+	border-color: rgba(0, 221, 29, 0.76);
+}
+
+.paroxismo{
+	top: 0;
+	left: 0;
+	position: fixed;
+	margin-top: 150px;
+	margin-left: 20px;
+	z-index: 4;
+	cursor: pointer;
+}
+.paroxismo img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border-style: groove;
+}
+
+.paroxismo img:hover{
+	border-color: rgba(126, 0, 138, 0.774);
+}
+
 .pop{
 	position:absolute;
 	width: 90%;
