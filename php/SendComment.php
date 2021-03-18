@@ -1,5 +1,5 @@
 <?php
-$destino = "ansanchez@tamayoconsultoria.com";
+$destino = "salsanchez004@outlook.com";
 $filename="index.php";
 $nombre = $_POST["nombre"];
 $inmail = $_POST["email"];
