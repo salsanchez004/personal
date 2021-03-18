@@ -1,5 +1,5 @@
 ﻿<?php
-$destino = "e.proyectocuratorial@gmail.com";
+$destino = "salsanchez004@outlook.com";
 $filename="https://paroxismoexpo.com";
 $nombre = $_POST["nombre"];
 $edad = $_POST["edad"];
